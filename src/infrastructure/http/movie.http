@@ -1,0 +1,42 @@
+GET http://localhost:3000/movies
+content-type: application/json
+
+### 
+
+POST http://localhost:3000/movies
+content-type: application/json
+
+{
+    "year": 2021,
+    "title": "The Matrix",
+    "producers": ["Joel Silver", "Lana Wachowski", "Lilly Wachowski"],
+    "studios": ["Warner Bros. Pictures, Village Roadshow Pictures"],
+    "winner":"yes"
+}
+
+###
+
+GET http://localhost:3000/movies/7139012d-fdf2-4c47-b48b-85c6c8b979ec
+content-type: application/json
+
+###
+
+GET http://localhost:3000/movies/awards/interval
+content-type: application/json
+
+###
+
+DELETE http://localhost:3000/movies/7139012d-fdf2-4c47-b48b-85c6c8b979ec
+content-type: application/json
+
+###
+PUT http://localhost:3000/movies/7139012d-fdf2-4c47-b48b-85c6c8b979ec
+content-type: application/json
+
+{
+    "year": 2021,
+    "title": "The Matrix Atualizado",
+    "producers": ["teste 1", "teste 2", "teste 3"],
+    "studios": ["studio 1, studio 2"],
+    "winner":"no"
+}
